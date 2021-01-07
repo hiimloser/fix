@@ -15,14 +15,12 @@ int main()
     int sum1=0,sum2=0;
 	for(int i=0;i<=n-1;i++)
 	{
-		a[i]=0;
 		a[i]=3*i+5;
 		printf("%d\t",a[i]);
 	}
 	printf("\nso chia het cho 2:\n");
 	for(int i=0;i<=n-1;i++)
 	{
-		a[i]=0;
 		a[i]=3*i+5;
 		if(a[i]%2==0)
 		{
@@ -34,7 +32,6 @@ int main()
 	printf("\nso chia het cho 5:\n");
 	for(int i=0;i<=n-1;i++)
 	{
-		a[i]=0;
 		a[i]=3*i+5;
 		if(a[i]%5==0)
 		{
@@ -56,7 +53,6 @@ int main()
 	int g1,g2;
 	for(int i=0;i<=n-1;i++)
 	{
-		a[i]=0;
 		a[i]=3*i+5;
 		if(a[i]%4==0)
 		{
@@ -67,7 +63,6 @@ int main()
 	}
 	for(int i=n-1;i>=0;i--)
 	{
-		a[i]=0;
 		a[i]=3*i+5;
 		if(a[i]%5==0)
 		{
@@ -81,15 +76,15 @@ int main()
 	printf("\ng1 = %d",g1);
 	printf("\ng2 = %d",g2);
 	printf("\nmang sau doi cho:\n");
-	for(int i=0;i<=n-1;i++)
+	
+	int temp;
+	temp=g1;
+	g1=g2;
+	g2=temp;
+	for(int i=0;i<n;i++)
 	{
-		a[i]=0;
-		a[i]=3*i+5;
-		int temp;
-		temp=g1;
-		g1=g2;
-		g2=temp;
 		printf("%d\t",a[i]);
+	}
 	}
 	return 0;
 }
